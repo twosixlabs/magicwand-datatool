@@ -1,0 +1,13 @@
+site_name: MAGICWAND Data Generator
+nav:
+  - Home: index.md
+  - Configuration: config.md
+  - CLI Tool: cli.md
+  - Attacks: attacks.md
+  - Attack Calibration: calibration.md
+  - Data: data.md
+  - Docker Images: images.md
+  - Data Validation: data_validation.md
+theme: readthedocs
+markdown_extensions:
+  - admonition

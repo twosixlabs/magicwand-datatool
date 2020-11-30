@@ -1,0 +1,1 @@
+{"attack_options": {"ak_num_threads": 50, "ak_num_ips": 20, "attack_delay": 15, "ak_duration": 300}, "attack": "apachekill", "compose-file": "magicwand_components/attacks/apachekill.yml"}

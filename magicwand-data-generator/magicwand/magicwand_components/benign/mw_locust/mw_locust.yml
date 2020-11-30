@@ -1,0 +1,23 @@
+version: '2.2'
+services:
+    
+  mw-client-smartswarm:
+    image: mw-client-smartswarm:latest
+    privileged: true
+    depends_on:
+      - "mw-sut-apachewp"
+    environment:
+      - TEST_DURATION=${CURR_CLIENT_DURATION}
+      - LOCUST_DURATION=${CURR_LOCUST_DURATION}    
+      - TEST_TARGET=mw-sut-apachewp:80
+      - NUM_IPS=${CURR_NUM_IPS}
+      - PROB_DIST=${CURR_PROB_DIST}
+      - NUM_CLIENTS=${CURR_NUM_CLIENTS}
+      - HATCH_RATE=${CURR_HATCH_RATE}
+      - KEEPALIVE=${CURR_KEEPALIVE}
+      - TRAFFIC_BEHAVIOR=${CURR_TRAFFIC_BEHAVIOR}
+      - SEED=${CURR_SEED}
+      - STAGGER=${CURR_STAGGER}
+      - WAIT_MAX=${CURR_WAIT_MAX}         
+    volumes:
+      - ./${CURR_RUN}:/home/

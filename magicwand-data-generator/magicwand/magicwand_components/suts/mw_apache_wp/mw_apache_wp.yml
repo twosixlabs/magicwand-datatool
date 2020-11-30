@@ -1,0 +1,16 @@
+version: '2.2'
+services:
+
+  mw-sut-apachewp:
+    image: mw-sut-apachewp:latest
+    privileged: true
+    ports:
+      - "80:80"
+    environment:
+      - TEST_DURATION=${CURR_TEST_DURATION}
+      - MAX_CLIENTS=${CURR_MAX_CLIENTS}
+      - PCAP_PACKET_SNAPLEN=${CURR_PCAP_PACKET_SNAPLEN}
+    volumes:
+      - ./${CURR_RUN}:/home/
+    #mem_limit: 16G
+    #cpus: 8

@@ -1,0 +1,17 @@
+version: '2.2'
+services:
+
+  mw-attack-apachekill:
+    image: mw-attack-apachekill:latest
+    privileged: true
+    depends_on:
+      - "mw-sut-apachewp"
+    environment:
+      - TEST_DURATION=${CURR_ATTACK_DURATION}
+      - TEST_TARGET=mw-sut-apachewp
+      - IP_LIMIT=${CURR_IP_LIMIT} 
+      - DELAY=${CURR_DELAY}
+      - MAX_THREADS=${CURR_MAX_THREADS}
+      - SEED=${CURR_SEED}      
+    volumes:
+      - ./${CURR_RUN}:/home/

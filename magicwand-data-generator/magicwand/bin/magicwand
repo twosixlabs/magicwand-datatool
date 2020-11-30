@@ -1,0 +1,43 @@
+#!/usr/bin/env python3
+"""
+    Purpose:
+        Entrypoint for MAGICWAND Data Generation Tool
+
+    Function Call:
+        magicwand
+
+    Example Call:
+        magicwand --help
+"""
+
+# Python Library Imports
+import logging
+import os
+import sys
+
+# Import the entrypoint script
+from magicwand.magicwand_cli import cli
+
+
+###
+# Main Execution
+###
+
+
+def main():
+    """
+    Purpose:
+        Execute the MAGICWAND CLI
+    """
+
+    cli.setup_magicwand_cli()
+    cli.magicwand_cli()
+
+
+###
+# Script Main Execution
+###
+
+
+if __name__ == "__main__":
+    main()

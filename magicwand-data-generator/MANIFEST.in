@@ -1,0 +1,12 @@
+include magicwand/magicwand_utils/static_files/configs/*.json
+
+include magicwand/magicwand_components/attacks/*/*.json
+include magicwand/magicwand_components/benign/*/*.json
+include magicwand/magicwand_components/suts/*/*.json
+include magicwand/magicwand_components/sensors/*/*.json
+
+
+include magicwand/magicwand_components/attacks/*/*.yml
+include magicwand/magicwand_components/sensors/*/*.yml
+include magicwand/magicwand_components/benign/*/*.yml
+include magicwand/magicwand_components/suts/*/*.yml

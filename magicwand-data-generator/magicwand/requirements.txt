@@ -1,0 +1,7 @@
+altair==4.1.0
+boto3==1.14.48
+botocore==1.17.48
+Click==7.0
+jinja2==2.10.1
+pandas==1.1.1
+numpy==1.18.1

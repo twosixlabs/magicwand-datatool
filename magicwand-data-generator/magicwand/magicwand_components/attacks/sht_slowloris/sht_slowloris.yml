@@ -1,0 +1,17 @@
+version: '2.2'
+services:
+
+  mw-attack-sht-slowloris:
+    image: mw-attack-sht-slowloris:latest
+    privileged: true
+    depends_on:
+      - "mw-sut-apachewp"
+    environment:
+      - TEST_DURATION=${CURR_ATTACK_DURATION}
+      - TEST_TARGET=mw-sut-apachewp
+      - NUM_CONNECTIONS=${CURR_NUM_CONNECTIONS}
+      - CONNECTIONS_PER_SEC=${CURR_CONNECTIONS_PER_SEC}
+      - DELAY=${CURR_DELAY}
+    command: begin-test.sh  
+    volumes:
+      - ./${CURR_RUN}:/home/

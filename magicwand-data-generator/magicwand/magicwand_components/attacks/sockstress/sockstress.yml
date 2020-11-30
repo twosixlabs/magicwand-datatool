@@ -1,0 +1,16 @@
+version: '2.2'
+services:
+
+  mw-attack-sockstress:
+    image: mw-attack-sockstress:latest
+    privileged: true
+    depends_on:
+      - "mw-sut-apachewp"
+    environment:
+      - TEST_DURATION=${CURR_ATTACK_DURATION}
+      - TEST_TARGET=mw-sut-apachewp
+      - PACKET_DELAY=${CURR_PACKET_DELAY}
+      - DELAY=${CURR_DELAY}
+    command: begin-test.sh  
+    volumes:
+      - ./${CURR_RUN}:/home/

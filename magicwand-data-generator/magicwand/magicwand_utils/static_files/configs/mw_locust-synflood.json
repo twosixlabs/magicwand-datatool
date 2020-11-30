@@ -1,0 +1,7 @@
+{
+    "attack": "synflood",
+    "benign": "mw_locust",
+    "sut": "mw_apache_wp",
+    "rtt": "mw_rtt_sensor",
+    "run_type": "mw-locust-synflood"
+}

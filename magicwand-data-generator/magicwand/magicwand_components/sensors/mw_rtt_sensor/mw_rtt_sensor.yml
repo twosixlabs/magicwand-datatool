@@ -1,0 +1,14 @@
+version: '2.2'
+services:
+
+  mw-client-rtt-tracker:
+    image: mw-client-rtt-tracker:latest
+    privileged: true
+    depends_on:
+      - "mw-sut-apachewp"
+    environment:
+      - TEST_DURATION=${CURR_TEST_DURATION}
+      - TEST_TARGET=mw-sut-apachewp:80
+      - RTT_TIMEOUT=${RTT_TIMEOUT}
+    volumes:
+      - ./${CURR_RUN}:/home/

@@ -1,0 +1,1 @@
+{"attack_options": {"attack_duration": 300, "attack_delay": 15}, "attack": "httpflood", "compose-file": "magicwand_components/attacks/httpflood.yml"}

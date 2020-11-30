@@ -1,0 +1,17 @@
+version: '2.2'
+services:
+
+  mw-attack-goloris:
+    image: mw-attack-goloris:latest
+    privileged: true
+    depends_on:
+      - "mw-sut-apachewp"
+    environment:
+      - TEST_DURATION=${CURR_ATTACK_DURATION}
+      - TEST_TARGET=mw-sut-apachewp
+      - WORKER_COUNT=${CURR_WORKER_COUNT} 
+      - RAMP_UP_INTERVAL=${CURR_RAMP_UP_INTERVAL}
+      - NODE_NUMBER=1
+      - DELAY=${CURR_DELAY}
+    volumes:
+      - ./${CURR_RUN}:/home/

@@ -1,0 +1,1 @@
+{"attack_options": {"packet_delay": 5000, "attack_duration": 300, "attack_delay": 15}, "attack": "sockstress", "compose-file": "magicwand_components/attacks/sockstress.yml"}

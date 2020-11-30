@@ -1,0 +1,1 @@
+{"attack_options": {"worker_count": 16, "ramp_up_interval": 1, "attack_delay": 15, "attack_duration": 300}, "attack": "goloris", "compose-file": "magicwand_components/attacks/goloris.yml"}

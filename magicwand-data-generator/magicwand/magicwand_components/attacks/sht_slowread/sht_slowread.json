@@ -1,0 +1,1 @@
+{"attack_options": {"connections_per_sec": 256, "attack_duration": 300, "num_connections": 16384,"attack_delay": 15}, "attack": "sht_slowread", "compose-file": "magicwand_components/attacks/sht_slowread.yml"}

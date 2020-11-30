@@ -1,0 +1,2 @@
+{"client_options": {"stagger":"ON","num_ips": 20, "client_duration": 300, "locust_duration": 60, "wait_max": 60, "keepalive": "ON", "seed": "None", "traffic_behavior":"default" }, "benign": "mw_locust", "compose-file": "magicwand_components/benign/mw_locust.yml"}
+

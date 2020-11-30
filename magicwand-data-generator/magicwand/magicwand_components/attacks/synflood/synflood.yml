@@ -1,0 +1,14 @@
+version: '2.2'
+services:
+
+  mw-attack-synflood:
+    image: mw-attack-synflood:latest
+    privileged: true
+    depends_on:
+      - "mw-sut-apachewp"
+    environment:
+      - TEST_DURATION=${CURR_ATTACK_DURATION}
+      - TEST_TARGET=mw-sut-apachewp
+      - DELAY=${CURR_DELAY}
+    volumes:
+      - ./${CURR_RUN}:/home/
