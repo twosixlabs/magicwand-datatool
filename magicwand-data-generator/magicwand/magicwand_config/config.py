@@ -17,4 +17,4 @@ class Config:
     Base Config Class for MAGICWAND. Will hold constants and configuration values
     """
 
-    VERSION = "1.0.0"
+    VERSION = "1.0.1"

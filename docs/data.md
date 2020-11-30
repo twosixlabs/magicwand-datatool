@@ -238,7 +238,7 @@ For details on the component fields view the [configuration page](config.md#) fo
   },
   "compose_file_string": "-f magicwand_components/suts/mw_apache_wp.yml -f magicwand_components/attacks/apachekill.yml -f magicwand_components/benign/mw_locust.yml -f magicwand_components/sensors/mw_rtt_sensor.yml ",
   "run_loc": "magicwand_components/suts/runs/mw-locust-apachekill_10_29_2020T10_37_57Z/",
-  "version": "beta-1.0.0"
+  "version": "beta-1.0.1"
 }
 ```
 
