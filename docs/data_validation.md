@@ -35,7 +35,7 @@ Here are some examples of attack signatures (Different for each attack) we check
 For each experiment we check for evidence that each of these components is functioning.
 
 !!! note 
-    These checks have **NOT** be implemented in 1.0.0
+    These checks have **NOT** be implemented in 1.0.1
 
 
 Client Signatures:
