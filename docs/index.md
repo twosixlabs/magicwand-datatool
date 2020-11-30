@@ -1,6 +1,5 @@
 # MAGICWAND Data Generator
 
-TODO insert logo
 <!-- ![Magicwand Apachekill Run](images/mw-ak-calibrate.png) -->
 
 ## What is Magicwand

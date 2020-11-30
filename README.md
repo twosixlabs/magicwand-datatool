@@ -2,13 +2,11 @@
 
 **PCAP generation platform to facilitate machine learning model development for identifying benign traffic vs. malicious "low volume" denial of service traffic.**
 
-TODO INSERT IMAGE?
-
 ## What is Magicwand
 
 Magicwand is a platform to provide high-quality, reliable, and reproducible data sets for low-and-slow DDoS attacks. With the use of Docker images and customizable JSON files, users can generate a multitude of network traffic PCAPS.
 
-For complete documentation on Magicwand, a gallery of available attacks, the configuration guide, tutorials, and teaching resources, frequently asked questions, and more, please read our [documentation](docs/).
+For complete documentation on Magicwand, a gallery of available attacks, the configuration guide, tutorials, and teaching resources, frequently asked questions, and more, please read our [documentation](https://magicwand-datatool.readthedocs.io/en/latest/).
 
 ### What is a "low and slow" DDoS
 
@@ -61,17 +59,10 @@ make -C magicwand-data-generator/ install
 
 In addition to the python package, Magicwand leverages prebuilt docker images to run experiments
 
-You can build them locally by running
+You can pull from docker hub
 
 ```bash
-bash images/build_all.sh
-```
-
-You can also pull from docker hub
-
-TODO: Push images to public registry
-```bash
-bash images/pull_all.sh
+bash scripts/pull_images.sh
 ```
 
 ### Quick Start
@@ -101,7 +92,7 @@ magicwand calibrate --attack apachekill
 magicwand run --config configs/mw_locust-apachekill.json --count 1 --data_version test_runs
 ```
 
-For complete documentation on Magicwand, a gallery of available attacks, the configuration guide, tutorials and teaching resources, frequently asked questions, and more, please visit our documentation at INSERT_READ_DOCS_URL.
+For complete documentation on Magicwand, a gallery of available attacks, the configuration guide, tutorials and teaching resources, frequently asked questions, and more, please visit our [documentation](https://magicwand-datatool.readthedocs.io/en/latest/).
 
 ## Contributing to Magicwand
 
@@ -128,7 +119,7 @@ TODO: We should host some PCAPS/CSVs somewhere for people to use https://osf.io/
 
 ## Citing Magicwand
 
-We would be glad if you used Magicwand in your scientific publications! If you do, please cite us using the citation guidelines. (INSERT URL)
+We would be glad if you used Magicwand in your scientific publications! If you do, please cite us using the citation guidelines.
 
 ## Affiliations
 
