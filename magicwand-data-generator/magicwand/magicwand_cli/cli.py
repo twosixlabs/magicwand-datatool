@@ -192,12 +192,12 @@ def calibrate_command(attack: str, ratio: str, verbose: str) -> None:
 
 @click.command("run")
 @click.option("--config", help="JSON file with run parameters", required=True)
-@click.option("--count", default="1", help="Number of runs", required=True, type=int)
-@click.option("--verbose", "-v", is_flag=True, help="Print more output.")
 @click.option(
     "--data_version", default="test_runs", help="Folder to save runs", required=True
 )
-def run_command(config: str, count: str, data_version: str, verbose: str) -> None:
+@click.option("--count", default=1, help="Number of runs", type=int)
+@click.option("--verbose", "-v", is_flag=True, help="Print more output.")
+def run_command(config: str, count: int, data_version: str, verbose: bool) -> None:
     """Start a run to generate data"""
     """
     Purpose:

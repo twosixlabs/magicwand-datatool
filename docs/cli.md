@@ -44,13 +44,14 @@ The run command starts the experiment using the JSON file for N number of runs s
 ```buildoutcfg
 Usage: magicwand run [OPTIONS]
 
-  Run command
+  Start a run to generate data
 
 Options:
-  --config TEXT    JSON file with run parameters [required]
-  --count INTEGER  Number of runs  [required]
-  --data_version TEXT    Folder to save runs  [required]
-  --help           Show this message and exit.
+  --config TEXT        JSON file with run parameters  [required]
+  --data_version TEXT  Folder to save runs  [required]
+  --count INTEGER      Number of runs
+  -v, --verbose        Print more output.
+  --help               Show this message and exit.
 ```
 
 Example use
