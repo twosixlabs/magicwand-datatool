@@ -11,5 +11,6 @@ docker pull twosixlabsmagicwand/mw-attack-sht-slowloris
 docker pull twosixlabsmagicwand/mw-attack-httpflood
 docker pull twosixlabsmagicwand/mw-sut-apachewp
 docker pull twosixlabsmagicwand/mw-sut-apachewp-plain
+docker pull twosixlabsmagicwand/mw-attack-goloris
 
 echo "Done pulling images"

@@ -1,1 +1,5 @@
-{"rtt":"mw_rtt_sensor", "compose-file": "magicwand_components/sensors/mw_rtt_sensor.yml", "timeout": 2}
+{
+  "rtt": "mw_rtt_sensor",
+  "compose-file": "magicwand_components/sensors/mw_rtt_sensor.yml",
+  "timeout": 2
+}
