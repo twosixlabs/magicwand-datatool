@@ -2,7 +2,7 @@ version: '2.2'
 services:
 
   mw-client-rtt-tracker:
-    image: mw-client-rtt-tracker:latest
+    image: twosixlabsmagicwand/mw-client-rtt-tracker:latest
     privileged: true
     depends_on:
       - "mw-sut-apachewp"

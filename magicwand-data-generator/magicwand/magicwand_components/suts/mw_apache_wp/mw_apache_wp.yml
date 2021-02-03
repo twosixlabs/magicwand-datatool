@@ -2,7 +2,7 @@ version: '2.2'
 services:
 
   mw-sut-apachewp:
-    image: mw-sut-apachewp:latest
+    image: twosixlabsmagicwand/mw-sut-apachewp:latest
     privileged: true
     ports:
       - "80:80"

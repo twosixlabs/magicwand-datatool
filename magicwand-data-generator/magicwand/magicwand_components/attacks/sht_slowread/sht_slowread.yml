@@ -2,7 +2,7 @@ version: '2.2'
 services:
 
   mw-attack-sht-slowread:
-    image: mw-attack-sht-slowread:latest
+    image: twosixlabsmagicwand/mw-attack-sht-slowread:latest
     privileged: true
     depends_on:
       - "mw-sut-apachewp"
