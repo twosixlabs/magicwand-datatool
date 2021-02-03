@@ -1,1 +1,7 @@
-{"pcap_snap_length": 400 , "max_clients": 250,  "run_duration": 300, "sut": "mw_apache_wp", "compose-file": "magicwand_components/suts/mw_apache_wp.yml"}
+{
+  "pcap_snap_length": 400,
+  "max_clients": 250,
+  "run_duration": 300,
+  "sut": "mw_apache_wp",
+  "compose-file": "magicwand_components/suts/mw_apache_wp.yml"
+}

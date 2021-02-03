@@ -1,1 +1,8 @@
-{"attack_options": {"attack_duration": 300, "attack_delay": 15}, "attack": "synflood", "compose-file": "magicwand_components/attacks/synflood.yml"}
+{
+  "attack_options": {
+    "attack_duration": 300,
+    "attack_delay": 15
+  },
+  "attack": "synflood",
+  "compose-file": "magicwand_components/attacks/synflood.yml"
+}
