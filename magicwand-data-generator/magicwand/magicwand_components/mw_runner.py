@@ -56,7 +56,10 @@ from magicwand.magicwand_components.benign import *
 from magicwand.magicwand_components.sensors import *
 from magicwand.magicwand_components.suts import *
 from magicwand.magicwand_components.mw_global import *
-from magicwand.magicwand_utils.magicwand_utils import get_logger
+from magicwand.magicwand_utils.magicwand_utils import (
+    get_logger,
+    CIC_CONVERTER_DOCKER_IMAGE,
+)
 from magicwand.magicwand_config.config import Config
 
 mw_components: Mapping[str, Type[MwComponent]] = {
@@ -515,15 +518,9 @@ class MwRunner(object):
 
         if os.path.exists(run_loc + "tcpdump.pcap"):
             # run the CIC Converter image
-            # docker run --rm -it -v $(PWD):/home  mw-cic-converter
-            # need to use absolute path
-            cmd = (
-                "docker run --rm -v "
-                + os.getcwd()
-                + "/"
-                + run_loc
-                + ":/home  mw-cic-converter"
-            )
+            # docker run --rm -it -v $(PWD):/home CIC_CONVERTER_DOCKER_IMAGE
+            # need to use an absolute path for the volume mount
+            cmd = f"docker run --rm -v {os.getcwd()}/{run_loc}:/home {CIC_CONVERTER_DOCKER_IMAGE}"
             status = os.system(cmd)
 
             if status != 0:
