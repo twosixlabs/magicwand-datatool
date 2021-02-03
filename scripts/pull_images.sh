@@ -33,4 +33,8 @@ docker tag twosixlabsmagicwand/mw-sut-apachewp mw-sut-apachewp
 docker pull twosixlabsmagicwand/mw-sut-apachewp-plain
 docker tag twosixlabsmagicwand/mw-sut-apachewp-plain mw-sut-apachewp-plain 
 
+docker pull twosixlabsmagicwand/mw-attack-goloris
+docker tag twosixlabsmagicwand/mw-attack-goloris mw-attack-goloris
+
+
 echo "Done pulling and tagging images"
