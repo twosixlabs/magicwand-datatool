@@ -56,6 +56,9 @@ from magicwand.magicwand_config.config import Config
 ###
 
 
+CIC_CONVERTER_DOCKER_IMAGE = "twosixlabsmagicwand/mw-cic-converter"
+
+
 def get_logger(name: str, log_level: int) -> logging.Logger:
     """
     Purpose:
@@ -157,11 +160,7 @@ def convert_pcap(pcap: str, output: str, force: bool) -> int:
         LOGGER.info(f"Output file {output} already exists, use convert -f to overwrite")
         return -1
 
-    cmd = (
-        "docker run --rm"
-        + f" -v {pcap_folder_location}:/home mw-cic-converter"
-        + f" ./convert_pcap.sh --input={pcap_filename}"
-    )
+    cmd = f"docker run --rm -v {pcap_folder_location}:/home {CIC_CONVERTER_DOCKER_IMAGE} ./convert_pcap.sh --input={pcap_filename}"
     status = Popen(cmd, shell=True).wait()
     if status != 0:
         LOGGER.error(f"Failed to convert pcap: {pcap}")
