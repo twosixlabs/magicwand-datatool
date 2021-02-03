@@ -2,7 +2,7 @@ version: '2.2'
 services:
 
   mw-attack-sht-rudeadyet:
-    image: mw-attack-sht-rudeadyet:latest
+    image: twosixlabsmagicwand/mw-attack-sht-rudeadyet:latest
     privileged: true
     depends_on:
       - "mw-sut-apachewp"

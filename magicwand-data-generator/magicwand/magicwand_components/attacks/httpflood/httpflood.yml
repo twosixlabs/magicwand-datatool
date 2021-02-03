@@ -2,7 +2,7 @@ version: '2.2'
 services:
 
   mw-attack-httpflood:
-    image: mw-attack-httpflood:latest
+    image: twosixlabsmagicwand/mw-attack-httpflood:latest
     privileged: true
     depends_on:
       - "mw-sut-apachewp"

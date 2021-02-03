@@ -2,7 +2,7 @@ version: '2.2'
 services:
 
   mw-attack-synflood:
-    image: mw-attack-synflood:latest
+    image: twosixlabsmagicwand/mw-attack-synflood:latest
     privileged: true
     depends_on:
       - "mw-sut-apachewp"

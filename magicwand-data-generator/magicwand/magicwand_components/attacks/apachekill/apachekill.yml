@@ -2,7 +2,7 @@ version: '2.2'
 services:
 
   mw-attack-apachekill:
-    image: mw-attack-apachekill:latest
+    image: twosixlabsmagicwand/mw-attack-apachekill:latest
     privileged: true
     depends_on:
       - "mw-sut-apachewp"

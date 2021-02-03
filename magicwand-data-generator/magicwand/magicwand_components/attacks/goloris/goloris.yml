@@ -2,7 +2,7 @@ version: '2.2'
 services:
 
   mw-attack-goloris:
-    image: mw-attack-goloris:latest
+    image: twosixlabsmagicwand/mw-attack-goloris:latest
     privileged: true
     depends_on:
       - "mw-sut-apachewp"

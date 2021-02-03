@@ -2,7 +2,7 @@ version: '2.2'
 services:
     
   mw-client-smartswarm:
-    image: mw-client-smartswarm:latest
+    image: twosixlabsmagicwand/mw-client-smartswarm:latest
     privileged: true
     depends_on:
       - "mw-sut-apachewp"
