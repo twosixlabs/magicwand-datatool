@@ -123,4 +123,5 @@ We would be glad if you used Magicwand in your scientific publications! If you d
 
 ## Affiliations
 
-![Two Six Logo](https://www.twosixlabs.com/wp-content/uploads/TwoSix-Logo-Media-Kit-Reverse-Red.jpg)
+
+[<img src="https://www.twosixlabs.com/wp-content/uploads/TwoSix-Logo-Media-Kit-Reverse-Red.jpg">](https://www.twosixlabs.com/)
