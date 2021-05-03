@@ -92,7 +92,7 @@ magicwand calibrate --attack apachekill
 magicwand run --config configs/mw_locust-apachekill.json --count 1 --data_version test_runs
 ```
 
-For complete documentation on Magicwand, a gallery of available attacks, the configuration guide, tutorials and teaching resources, frequently asked questions, and more, please visit our [documentation](https://magicwand-datatool.readthedocs.io/en/latest/).
+For To get started using the Magicwand Data Generator, please visit our [documentation](https://magicwand-datatool.readthedocs.io/en/latest/).
 
 ## Contributing to Magicwand
 
