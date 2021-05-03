@@ -25,21 +25,21 @@ As you can see, there are lots of ways to get involved and we would be very happ
 
 ## Getting Started on GitHub
 
-Magicwand is hosted on GitHub at TODO_INSERT_GITHUB_URL
+Magicwand is hosted on GitHub at https://github.com/twosixlabs/magicwand-datatool
 
 The typical workflow for a contributor to the codebase is as follows:
 
 1. **Discover** a bug or a feature by using Magicwand.
-2. **Discuss** with the core contributes by TODO_INSERT_GITHUB_URL [adding an issue](#).
+2. **Discuss** with the core contributes by [adding an issue](https://github.com/twosixlabs/magicwand-datatool/issues).
 3. **Fork** the repository into your own GitHub account.
-4. Create a **Pull Request** first thing to TODO_INSERT_GITHUB_URL [connect with us]() about your task.
+4. Create a **Pull Request** first thing to [connect with us](https://github.com/twosixlabs/magicwand-datatool/pulls) about your task.
 5. **Code** the feature, write the documentation, add your contribution.
 6. **Review** the code with core contributors who will guide you to a high-quality submission.
 7. **Merge** your contribution into the Magicwand codebase.
 
-We believe that *contribution is collaboration* and therefore emphasize *communication* throughout the open source process. We rely heavily on GitHub's social coding tools to allow us to do this. For instance, we use GitHub's [milestone](https://help.github.com/en/articles/about-milestones) feature to focus our development efforts for each Magicwand semester, so be sure to check out the issues associated with our TODO_INSERT_GITHUB_URL [current milestone]()!
+We believe that *contribution is collaboration* and therefore emphasize *communication* throughout the open source process. We rely heavily on GitHub's social coding tools to allow us to do this. For instance, we use GitHub's [milestone](https://help.github.com/en/articles/about-milestones) feature to focus our development efforts for each Magicwand semester, so be sure to check out the issues associated with our [current milestone](https://github.com/twosixlabs/magicwand-datatool/milestones)!
 
-Once you have a good sense of how you are going to implement the new feature (or fix the bug!), you can reach out for feedback from the maintainers by creating a TODO_INSERT_GITHUB_URL [pull request](). Please note that if we feel your solution has not been thought out in earnest, or if the PR is not aligned with our TODO_INSERT_GITHUB_URL[current milestone]() goals, we may reach out to ask that you close the PR so that we can prioritize reviewing the most critical feature requests and bug fixes.
+Once you have a good sense of how you are going to implement the new feature (or fix the bug!), you can reach out for feedback from the maintainers by creating a [pull request](https://github.com/twosixlabs/magicwand-datatool/pulls). Please note that if we feel your solution has not been thought out in earnest, or if the PR is not aligned with our [current milestone](https://github.com/twosixlabs/magicwand-datatool/milestones) goals, we may reach out to ask that you close the PR so that we can prioritize reviewing the most critical feature requests and bug fixes.
 
 Ideally, any pull request should be capable of resolution within 6 weeks of being opened. This timeline helps to keep our pull request queue small and allows Magicwand to maintain a robust release schedule to give our users the best experience possible. However, the most important thing is to keep the dialogue going! And if you're unsure whether you can complete your idea within 6 weeks, you should still go ahead and open a PR and we will be happy to help you scope it down as needed.
 
@@ -56,14 +56,14 @@ Once forked, use the following steps to get your development environment set up 
     After clicking the fork button, you should be redirected to the GitHub page of the repository in your user account. You can then clone a copy of the code to your local machine.
 
     ```
-    $ git clone https://github.com/[YOURUSERNAME]/TODO_INSERT_GITHUB_URL
+    $ git clone https://github.com/twosixlabs/magicwand-datatool.git
     $ cd magicwand
     ```
 
     Optionally, you can also [add the upstream remote](https://help.github.com/articles/configuring-a-remote-for-a-fork/) to synchronize with changes made by other contributors:
 
     ```
-    $ git remote add upstream TODO_INSERT_GITHUB_URL
+    $ git remote add upstream https://github.com/twosixlabs/magicwand-datatool
     ```
 
     See "Branching Conventions" below for more on this topic.
@@ -89,12 +89,12 @@ The Magicwand repository is set up in a typical production/release/development c
 You should work directly in your fork and create a pull request from your fork's develop branch into ours. We also recommend setting up an `upstream` remote so that you can easily pull the latest development changes from the main Magicwand repository (see [configuring a remote for a fork](https://help.github.com/articles/configuring-a-remote-for-a-fork/)). You can do that as follows:
 
 ```
-$ git remote add upstream https://github.com/TODO_INSERT_GITHUB_URL`
+$ git remote add upstream https://github.com/https://github.com/twosixlabs/magicwand-datatool`
 $ git remote -v
 origin    https://github.com/YOUR_USERNAME/YOUR_FORK.git (fetch)
 origin    https://github.com/YOUR_USERNAME/YOUR_FORK.git (push)
-upstream  https://github.com/TODO_INSERT_GITHUB_URL (fetch)
-upstream  https://github.com/TODO_INSERT_GITHUB_URL (push)
+upstream  https://github.com/https://github.com/twosixlabs/magicwand-datatool (fetch)
+upstream  https://github.com/https://github.com/twosixlabs/magicwand-datatool (push)
 ```
 
 When you're ready, request a code review for your pull request. Then, when reviewed and approved, you can merge your fork into our main branch. Make sure to use the "Squash and Merge" option in order to create a Git history that is understandable.
