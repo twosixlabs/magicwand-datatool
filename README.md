@@ -41,6 +41,8 @@ The following are dependencies need to properly run Magicwand
 
 Magicwand is compatible with Python 3.6 or later. The simplest way to install Magicwand and its dependencies is from PyPI with pip, Python's preferred package installer.
 
+**Note** Depending on your permissions (Docker/Python), you may need to run some commands as sudo (e.g. `sudo bash bash scripts/pull_images.sh`). It is recommended to run without root first, and only run as root if necessary.
+
 ```bash
 pip install magicwand
 ```
