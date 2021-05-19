@@ -124,7 +124,8 @@ As you can see, there are lots of ways to get involved and we would be very happ
 For more information, checkout the [CONTRIBUTING.md](CONTRIBUTING.md) file in the root of the repository.
 
 ## Magicwand Datasets
-TODO: We should host some PCAPS/CSVs somewhere for people to use https://osf.io/? or an s3 bucket?
+
+Example datasets have been published to [Zenodo](https://zenodo.org/record/4774258#.YKV-1pNKjmE) following the steps documented in the `Quick Start`
 
 ## Citing Magicwand
 
