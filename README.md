@@ -44,6 +44,13 @@ Magicwand is compatible with Python 3.6 or later. The simplest way to install Ma
 **Note** Depending on your permissions (Docker/Python), you may need to run some commands as sudo (e.g. `sudo bash bash scripts/pull_images.sh`). It is recommended to run without root first, and only run as root if necessary.
 
 ```bash
+python3 -m virtualenv ./venv
+source venv/bin/activate
+```
+
+It is also recommended to utilize a vitural environment when installing python packages to avoid compatibility issues.
+
+```bash
 pip install magicwand
 ```
 
