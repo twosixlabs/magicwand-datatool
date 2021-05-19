@@ -41,6 +41,15 @@ The following are dependencies need to properly run Magicwand
 
 Magicwand is compatible with Python 3.6 or later. The simplest way to install Magicwand and its dependencies is from PyPI with pip, Python's preferred package installer.
 
+**Note** Depending on your permissions (Docker/Python), you may need to run some commands as sudo (e.g. `sudo bash bash scripts/pull_images.sh`). It is recommended to run without root first, and only run as root if necessary.
+
+```bash
+python3 -m virtualenv ./venv
+source venv/bin/activate
+```
+
+It is also recommended to utilize a vitural environment when installing python packages to avoid compatibility issues.
+
 ```bash
 pip install magicwand
 ```
@@ -92,7 +101,7 @@ magicwand calibrate --attack apachekill
 magicwand run --config configs/mw_locust-apachekill.json --count 1 --data_version test_runs
 ```
 
-For complete documentation on Magicwand, a gallery of available attacks, the configuration guide, tutorials and teaching resources, frequently asked questions, and more, please visit our [documentation](https://magicwand-datatool.readthedocs.io/en/latest/).
+For To get started using the Magicwand Data Generator, please visit our [documentation](https://magicwand-datatool.readthedocs.io/en/latest/).
 
 ## Contributing to Magicwand
 
@@ -115,7 +124,8 @@ As you can see, there are lots of ways to get involved and we would be very happ
 For more information, checkout the [CONTRIBUTING.md](CONTRIBUTING.md) file in the root of the repository.
 
 ## Magicwand Datasets
-TODO: We should host some PCAPS/CSVs somewhere for people to use https://osf.io/? or an s3 bucket?
+
+Example datasets have been published to [Zenodo](https://zenodo.org/record/4774258#.YKV-1pNKjmE) following the steps documented in the `Quick Start`
 
 ## Citing Magicwand
 
